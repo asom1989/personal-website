@@ -1,0 +1,101 @@
+.section-wrapper {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.about-left,
+.about-right {
+  padding: 0.7rem;
+  width: 50%;
+  flex-grow: 1;
+}
+
+.about-left p {
+  padding: 0 1rem;
+  color: var(--secondary-text-color);
+  line-height: 1.4rem;
+}
+
+.skills {
+  padding: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 22px;
+}
+.skills .skills-warrper {
+  flex-direction: column;
+}
+.skills div {
+  width: 30%;
+}
+.skills label {
+  color: var(--secondary-text-color);
+}
+.skills meter {
+  width: 9rem;
+  height: 25px;
+}
+
+.skills meter::-webkit-meter-bar {
+  margin-top: 8px;
+  background: var(--secondary-text-color);
+}
+
+.skills meter::-webkit-meter-optimum-value {
+  background: var(--blue-color);
+}
+
+.repo {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+.about-right,
+.about-left {
+  flex-direction: column;
+}
+
+.about-right .repo-wrapper h4 {
+  padding: 1.5rem;
+  color: var(--primary-text-color);
+}
+.about-right .repo-wrapper h4 span {
+  margin-left: 3px;
+  font-size: 0.75rem;
+  color: var(--secondary-text-color);
+}
+
+.repo-wrapper {
+  text-align: center;
+}
+.about-animation {
+  width: 57%;
+}
+
+@media (max-width: 944px) {
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+  .about-left,
+  .about-right {
+    padding: 0.5rem;
+  }
+  .about-animation {
+    width: 65%;
+  }
+}
+@media (max-width: 576px) {
+  .skills div {
+    width: 45%;
+  }
+  .skills {
+    flex-direction: column;
+  }
+}

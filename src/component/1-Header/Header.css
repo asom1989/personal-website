@@ -1,0 +1,142 @@
+header.d-flex {
+  justify-content: space-between;
+  height: 10vh;
+}
+
+header.d-flex nav {
+  background-color: var(--bgHeader);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  box-shadow: 1px 1px 40px #2323242a;
+}
+
+header ul.d-flex {
+  gap: 16px;
+  justify-content: center;
+}
+
+header ul li a {
+  color: var(--primary-text-color);
+  opacity: 0.8;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+header ul li a:hover {
+  color: var(--blue-color);
+  opacity: 1;
+}
+
+header ul li a.active {
+  color: var(--blue-color);
+  opacity: 1;
+  font-size: 0.9rem;
+}
+
+header button.menu,
+header button.mode {
+  background-color: var(--bgHeader);
+  padding: 0.5rem;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  justify-content: center;
+  color: var(--secondary-text-color);
+  border: 1px solid rgba(244, 165, 96, 0.249);
+  box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
+}
+
+header button.menu:hover,
+header button.mode:hover {
+  color: var(--primary-text-color);
+  border: 1px solid rgba(244, 165, 96);
+  transition: 0.2s;
+}
+header button.menu {
+  display: none;
+}
+
+header .fixed {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(40, 40, 48, 0.91);
+  z-index: 10;
+}
+
+header .fixed ul.modal {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secondary-color);
+  animation: move 1s 1;
+}
+
+header .fixed ul.modal li {
+  border-bottom: 1px solid var(--border-color);
+  padding-top: 0.5rem;
+  padding-bottom: 0.77rem;
+}
+
+header .fixed ul.modal li:first-child button {
+  display: flex;
+  width: fit-content;
+  padding: 0.5rem;
+  border: none;
+  background: none;
+  box-shadow: none;
+  color: var(--secondary-text-color);
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+header .fixed ul.modal li:first-child button:hover {
+  font-size: 1.7rem;
+  color: crimson;
+  rotate: -180deg;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+header .fixed ul.modal li:first-child {
+  align-self: flex-end;
+  border: none;
+  padding-top: 0.2rem;
+  padding-bottom: 0;
+  margin-bottom: -1rem;
+}
+
+header .fixed ul.modal li:last-child {
+  border: none;
+}
+
+header .fixed ul.modal li {
+  font-size: 1rem;
+}
+
+header .sun {
+  color: orangered;
+}
+@keyframes move {
+  0% {
+    scale: 0;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  header.d-flex nav {
+    display: none;
+  }
+  header button.menu {
+    display: flex;
+  }
+}
