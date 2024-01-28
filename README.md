@@ -1,6 +1,6 @@
 # Mitt Portfolio Webbprojekt
 
-## https://asom1989.github.io/personal-website/
+## https://silver-heliotrope-f42f8e.netlify.app/
 
 Detta är mitt personliga portfolioprojekt, utvecklat med hjälp av React för att skapa en interaktiv och informativ webbplats.
 
