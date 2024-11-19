@@ -6,6 +6,7 @@ import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import Lottie from "lottie-react";
 import devAnimation from "../../animation/devAnimation.json";
 import { LiHeader, AnimatedText, Button } from "../index";
+import cv from "../../assets/CV.pdf";
 
 const Home = () => {
   // useState för att hantera text på knappen
@@ -55,7 +56,7 @@ const Home = () => {
             />
           </ul>
           {/* Knapp för att ladda ner CV */}
-          <a href="/">
+          <a href={cv} download style={{ padding: "1rem" }}>
             <Button onClick={handleButtonClick} name={buttonText} />
           </a>
         </div>
