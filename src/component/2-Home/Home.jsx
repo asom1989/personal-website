@@ -10,7 +10,7 @@ import cv from "../../assets/CV.pdf";
 
 const Home = () => {
   // useState för att hantera text på knappen
-  const [buttonText, setButtonText] = useState("Download CV");
+  const [buttonText, setButtonText] = useState("Download CV!");
   // Funktion för att hantera knappklick
   const handleButtonClick = () => {
     setButtonText("Thank you");
